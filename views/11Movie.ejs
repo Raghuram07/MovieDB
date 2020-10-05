@@ -1,7 +1,39 @@
-<h1>search for a movie</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <header>
+    <h1>MovieDB</h1>
+    <marquee behavior="alternate" scrollamount="10">
+      <p>
+        Wanna Know stuffs about Moivies * Latest Movies * Old Movies
+      </p></marquee
+    >
+  </header>
 
-<form action="/result" method="GET">
-  <input type="text" name="movieName" value="">
-  <button type="submit" name="button">Search</button>
+  <body>
+    <!-- form start -->
+    <center>
+      <form action="/result" method="GET">
+        <label for="name" id="lable">Enter Movie Name</label>
+        <br />
+        <br />
+        <input type="name" name="name" id="name" />
+        <button type="submit" name="button" id="button">Search</button>
+      </form>
+    </center>
+    <br />
+    <br />
 
-</form>
+    <img
+      src="https://techzimo.com/wp-content/uploads/2020/04/9x.jpg"
+      alt="movies poster"
+    />
+    <!-- form end -->
+  </body>
+</html>
+

@@ -1,0 +1,41 @@
+h1 {
+  font-family: Helvetica;
+  text-align: center;
+  background-color: bisque;
+  color: #132743;
+}
+
+#lable {
+  color: brown;
+}
+
+input[type="name"] {
+  background-color: white;
+  background-image: url(https://img.icons8.com/search);
+  background-size: 7%;
+  background-position: 5px 3px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+#button {
+  transition-duration: 0.4s;
+}
+
+#button:hover {
+  background-color: #d7385e; /* Green */
+  color: white;
+}
+body {
+  font-weight: 600;
+  background-color: #edc988;
+}
+
+img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+header {
+  overflow: hidden;
+}

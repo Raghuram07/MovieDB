@@ -10,3 +10,9 @@ you can connect me with :https://discord.gg/rFTrhQ
 im always ready to explain doubts in any aspect.
 
 
+## Installation and Running
+
+```shell
+$ npm install
+$ node 11.MovieDataApi.js
+```

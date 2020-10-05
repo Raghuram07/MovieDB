@@ -1,10 +1,15 @@
 var express=require('express');
 var app=express();
 var request=require('request');
+homePage = '11Movie.ejs';
+resultPage = '11MovieResult.ejs';
+staticPath = "static";
+
+app.use(express.static(staticPath));
 
 
 app.get('/',function(req,res){
-  res.render("11Movie.ejs");
+  res.render(homePage);
 });
 
 app.get('/result',function(req,res){
@@ -14,7 +19,7 @@ app.get('/result',function(req,res){
   request(url,function(error,response,body){
     if(!error && response.statusCode==200){
       var parsedResult=JSON.parse(body);
-      res.render("11MovieResult.ejs",{Result:parsedResult});
+      res.render(resultPage,{Result:parsedResult});
     }
     else
     {
