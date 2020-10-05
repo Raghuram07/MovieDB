@@ -3,6 +3,9 @@ var app=express();
 var request=require('request');
 homePage = '11Movie.ejs';
 resultPage = '11MovieResult.ejs';
+staticPath = "static";
+
+app.use(express.static(staticPath));
 
 
 app.get('/',function(req,res){
