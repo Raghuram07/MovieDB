@@ -1,0 +1,24 @@
+{
+  "name": "moviedb",
+  "version": "1.0.0",
+  "description": "fetches movies information",
+  "main": "11.MovieDataApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raghuram07/MovieDB.git"
+  },
+  "author": "Raghuram reddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raghuram07/MovieDB/issues"
+  },
+  "homepage": "https://github.com/Raghuram07/MovieDB#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
