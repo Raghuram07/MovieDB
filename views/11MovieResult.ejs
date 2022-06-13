@@ -1,4 +1,4 @@
-<h1>your searched results :</h1>
+<!-- <h1>your searched results :</h1>
 <center>
 <img src="<%= "https://image.tmdb.org/t/p/w300"+Result.results[0].poster_path%>" alt="Movie Poster">
 </center>
@@ -9,4 +9,26 @@
 <h1> Original Language :<%= Result.results[0].original_language%>%></h1>
 <h1> Original Title :<%= Result.results[0].original_title%>%></h1>
 <h1> Release_date :<%= Result.results[0].release_date%>%></h1>
-<h1> overview :<%= Result.results[0].overview%>%></h1>
+<h1> overview :<%= Result.results[0].overview%>%></h1> -->
+
+
+
+<h1>your searched results :</h1>
+
+<a href="http://localhost:3000/" style="color:blue">
+	Go-back...
+</a>
+
+<% for(var i=0;i<Result.results.length;i++){%>
+<center>
+<img src="<%= "https://image.tmdb.org/t/p/w300"+Result.results[i].poster_path%>" alt="Movie Poster">
+</center>
+
+<img src="<%= "https://image.tmdb.org/t/p/w300"+Result.results[i].backdrop_path%>" alt="BackDropr">
+<h1> movie name is :<%= Result.results[i].title%>%></h1>
+<h1> IMDB Rating :<%= Result.results[i].vote_average%>%></h1>
+<h1> Original Language :<%= Result.results[i].original_language%>%></h1>
+<h1> Original Title :<%= Result.results[i].original_title%>%></h1>
+<h1> Release_date :<%= Result.results[i].release_date%>%></h1>
+<h1> overview :<%= Result.results[i].overview%>%></h1>
+<% } %>
